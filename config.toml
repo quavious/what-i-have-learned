@@ -47,7 +47,7 @@ paginate = 5
 [languages]
   [languages.en]
     languageName = "English"
-    title = "Terminal"
+    title = "What I have learned"
     subtitle = "A simple, retro theme for Hugo"
     owner = ""
     keywords = ""
@@ -59,7 +59,7 @@ paginate = 5
     missingBackButtonLabel = "Back to home page"
 
     [languages.en.params.logo]
-      logoText = "Today I have learned"
+      logoText = "What I have learned"
       logoHomeLink = "/"
 
     [languages.en.menu]
