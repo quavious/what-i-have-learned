@@ -253,4 +253,14 @@ server.js 파일을 실행시켜서 5000번 포트의 로컬호스트로 접속�
 
 이 중에서 babel 라이브러리가 import 문과 같은 ES6 이상의 문법이 사용된 코드를 웹 브라우저가 인식할 수 있도록 트랜스파일링해준다.
 
+일반적인 NodeJS 서버 내 모듈 시스템은 CommonJS를 사용하는데, CommonJS에서는 아직 ES6 이상의 문법을 완전히 지원하지 않는다.
+
+require 문을 import 문으로 바꿔준 뒤 서버를 실행하면 오류가 발생한다.
+
+예시
+
+```
+SyntaxError: Cannot use import statement outside a module
+```
+
 express에서도 import 문 등의 ES6+ 코드를 작성하려면 babel을 직접 설정해주거나, 타입스크립트를 사용한 후 자바스크립트로 컴파일하는 방법을 사용할 수 있다.
